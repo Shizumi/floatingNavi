@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<title>FloatingNavi</title>
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.9.1/build/cssreset/cssreset-min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src='./floating.js'></script>
+	<script>
+(function($) {
+	$(function () {
+		$('.pageup').floating ({
+			objects : {bottomStandard : '.footer'
+			         , navi : '.pageup'
+			         , main : '.main'
+			          },
+			pixels : {fadein : 10
+			        , sideMargin : 10
+			        , bottomMargin : 10
+			         }
+		});
+		$('.aaaa').floating ({
+			objects : {bottomStandard : '.footer'
+			         , navi : '.aaaa'
+			         , main : '.main'
+			          },
+			pixels : {fadein : 300
+			        , sideMargin : 40
+			        , bottomMargin : 50
+			         }
+		});
+	});
+})(jQuery);
+	</script>
+
+</head>
+<body>
+<div class='header' style='background: #cdc;height: 200px; margin: 0px auto;'>
+
+</div>
+
+<div class='main' style='background: #0dd; width: 900px; height: 1800px; margin: 0px auto;'>
+</div>
+
+<div class='pageup' style='background: #f33; width: 40px; height: 40px;'></div>
+<div class='aaaa' style='background: #3f3; width: 50px; height: 80px;'></div>
+
+<div class='footer' style='background: #3f3; height: 180px; margin: 0px auto;'>
+</div>
+</body>
+</html>
